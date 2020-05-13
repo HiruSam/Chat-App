@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+import {Link, Redirect, Route, Switch} from 'react-router-dom';
 import styled from 'styled-components';
+import Login from "./Login";
 const Styles = styled.div`
   .navbar { background-color: #222; }
   a, .navbar-nav, .navbar-light .nav-link {
@@ -34,4 +36,5 @@ export const NavigationBar = () => (
             </Navbar.Collapse>
         </Navbar>
     </Styles>
+
 )

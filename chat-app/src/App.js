@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import logo from './screen.jpg';
 // the below components will be created shortly
 import Login from "./components/Login";
 import GroupChat from "./components/GroupChat";
@@ -15,11 +16,12 @@ class App extends Component {
             <React.Fragment>
                 <Router>
                     <NavigationBar />
+                    <img src={logo} alt="Logo" class="center"/>;
+                    <Switch>
+                        {/*<Redirect exact from="/" to="/login" />*/}
+                        <Route path="/login" component={Login} />
+                    </Switch>
                 </Router>
-                {/*<Switch>*/}
-                {/*    <Redirect exact from="/" to="/login" />*/}
-                {/*    <Route path="/login" component={Login} />*/}
-                {/*</Switch>*/}
             </React.Fragment>
 
         );
