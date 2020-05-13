@@ -41,7 +41,7 @@ class register extends React.Component {
 
                             </div>
 
-                            <input type="submit" value="register" className="btn btn-success btn-block"/>
+                            <input type="submit" value="Register" className="btn btn-success btn-block"/>
                         </form>
                     </CardBody>
                 </Card>
