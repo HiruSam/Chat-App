@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import logo from './screen.jpg';
-// the below components will be created shortly
-import Login from "./components/Login";
-import GroupChat from "./components/GroupChat";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route,Redirect, Switch } from "react-router-dom";
-import { NavigationBar } from './components/NavigationBar';
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import NavigationBar from './components/NavigationBar';
 class App extends Component {
     constructor(props) {
         super(props);
@@ -16,11 +13,8 @@ class App extends Component {
             <React.Fragment>
                 <Router>
                     <NavigationBar />
+                    <h3 className="text-center text-warning">Welcome To the App......</h3>
                     <img src={logo} alt="Logo" class="center"/>;
-                    <Switch>
-                        {/*<Redirect exact from="/" to="/login" />*/}
-                        <Route path="/login" component={Login} />
-                    </Switch>
                 </Router>
             </React.Fragment>
 

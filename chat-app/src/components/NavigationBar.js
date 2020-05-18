@@ -1,40 +1,42 @@
-import React from 'react';
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
-import {Link, Redirect, Route, Switch} from 'react-router-dom';
-import styled from 'styled-components';
-import Login from "./Login";
-const Styles = styled.div`
-  .navbar { background-color: #222; }
-  a, .navbar-nav, .navbar-light .nav-link {
-    color: #9FFFCB;
-    &:hover { color: white; }
-  }
-  .navbar-brand {
-    font-size: 1.4em;
-    color: #9FFFCB;
-    &:hover { color: white; }
-  }
-  .form-center {
-    position: absolute !important;
-    left: 25%;
-    right: 25%;
-  }
-`;
-export const NavigationBar = () => (
-    <Styles>
-        <Navbar expand="lg">
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-            <Form className="form-center">
-                <FormControl type="text" placeholder="Search Chat" className="" />
-            </Form>
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/chat">Chat</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/login">Login</Nav.Link></Nav.Item>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    </Styles>
+import React, {Component} from "react";
+import {Navbar, Nav} from 'react-bootstrap';
+import { Link } from "react-router-dom";
+class NavigationBar extends React.Component{
 
-)
+    render() {
+        return(
+            <Navbar bg="light" expand="lg">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav>
+                        <Nav.Link> <Link  className="nav-link" to="/">
+                            <i className="fa fa-home"></i>
+                            &nbsp;
+                            Home
+                        </Link>
+                        </Nav.Link>
+                        <Nav.Link> <Link  className="nav-link" to="/GroupChat">
+                            <i className="fa fa-comment"></i>
+                            &nbsp;
+                            Chat
+                        </Link>
+                        </Nav.Link>
+                        <Nav.Link> <Link  className="nav-link" to='/Login'>
+                            <i className="fa fa-user-circle"></i>&nbsp;
+                            Login
+                        </Link>
+                        </Nav.Link>
+                        <Nav.Link> <Link  className="nav-link" to="/register">
+                            <i className="fas fa-user-circle"></i> &nbsp;
+                            Register
+                        </Link>
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        );
+    }
+
+
+}
+export default NavigationBar;

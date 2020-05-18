@@ -1,12 +1,7 @@
 import React from "react";
-import {Card, CardTitle, CardSubtitle, CardBody} from "reactstrap";
 import {Link} from 'react-router-dom';
 class Login extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
+
     render() {
         return (
             <React.Fragment>
@@ -15,7 +10,7 @@ class Login extends React.Component {
                         <CardBody >
                             <CardTitle> <h2><strong>Login</strong></h2></CardTitle>
                             <CardSubtitle className="text-muted">Don't have an account?
-                                <Link to="/register"> Register. </Link></CardSubtitle>
+                                <Link to="./register"> Register.</Link></CardSubtitle>
                             <br/>
 
                             <form>
@@ -33,7 +28,10 @@ class Login extends React.Component {
                         </CardBody>
                     </Card>
                 </div>
+
+
             </React.Fragment>
+
         );
     }
 }
