@@ -4,7 +4,9 @@ class GroupChat extends React.Component {
         super(props);
     }
     render() {
-        return <div className="chatWindow" />;
+        return(<div className="chatWindow" />
+        );
+
     }
 }
 export default GroupChat;

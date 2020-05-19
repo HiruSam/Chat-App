@@ -15,12 +15,6 @@ class NavigationBar extends React.Component{
                             Home
                         </Link>
                         </Nav.Link>
-                        <Nav.Link> <Link  className="nav-link" to="/GroupChat">
-                            <i className="fa fa-comment"></i>
-                            &nbsp;
-                            Chat
-                        </Link>
-                        </Nav.Link>
                         <Nav.Link> <Link  className="nav-link" to='/Login'>
                             <i className="fa fa-user-circle"></i>&nbsp;
                             Login
@@ -29,6 +23,12 @@ class NavigationBar extends React.Component{
                         <Nav.Link> <Link  className="nav-link" to="/register">
                             <i className="fas fa-user-circle"></i> &nbsp;
                             Register
+                        </Link>
+                        </Nav.Link>
+                        <Nav.Link> <Link  className="nav-link" to="/GroupChat">
+                            <i className="fa fa-comment"></i>
+                            &nbsp;
+                            Chat
                         </Link>
                         </Nav.Link>
                     </Nav>

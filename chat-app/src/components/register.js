@@ -11,7 +11,6 @@ class register extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <NavBar/>
                 <Card className="bg-light mb-3 text-center w-50 mx-auto my-lg-5">
                     <CardBody>
                         <CardTitle>
