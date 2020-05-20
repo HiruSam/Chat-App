@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Navbar, Nav} from 'react-bootstrap';
 import { Link } from "react-router-dom";
+
 class NavigationBar extends React.Component{
 
     render() {
@@ -9,7 +10,7 @@ class NavigationBar extends React.Component{
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link> <Link  className="nav-link" to="/">
+                        <Nav.Link> <Link  className="nav-link" to="/home">
                             <i className="fa fa-home"></i>
                             &nbsp;
                             Home
