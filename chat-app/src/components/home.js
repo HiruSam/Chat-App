@@ -4,11 +4,11 @@ import Caro1 from "../Images/caro2.jpg";
 import Caro2 from "../Images/caro4.jpg";
 import Caro3 from "../Images/caro1.jpg";
 import Caro4 from "../Images/caro3.jpg";
+import mainPage from "./mainPage";
 class home extends Component{
 
     render() {
         return(
-            <div>
                 <div>
                     <center>
                         <Carousel>
@@ -49,13 +49,9 @@ class home extends Component{
                             </Carousel>
                         </Carousel>
                     </center>
+                    <mainPage/>
                 </div>
-                <div className="mt-5">
-                    <h3 className= "Topic text-center text-warning" >
-                        <i>Welcome To The App..</i>
-                    </h3>
-                </div>
-            </div>
+
         );
     }
 }

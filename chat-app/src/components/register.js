@@ -1,7 +1,6 @@
 import React from "react";
 import {Card, CardTitle, CardSubtitle, CardBody} from "reactstrap";
 import {Link} from 'react-router-dom';
-import NavBar from "./NavigationBar";
 class register extends React.Component {
     constructor(props) {
         super(props);

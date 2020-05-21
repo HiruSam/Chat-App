@@ -1,11 +1,13 @@
 import React, {Component} from "react";
 import {Navbar, Nav} from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import mainPage from "./mainPage";
 
 class NavigationBar extends React.Component{
 
     render() {
         return(
+            <React.Fragment>
             <Navbar bg="light" expand="lg">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -35,6 +37,8 @@ class NavigationBar extends React.Component{
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+                <mainPage/>
+            </React.Fragment>
         );
     }
 

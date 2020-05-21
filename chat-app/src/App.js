@@ -8,6 +8,7 @@ import home from "./components/home";
 import Login from "./components/Login";
 import register from "./components/register";
 import GroupChat from "./components/GroupChat";
+import mainPage from "./components/mainPage";
 class App extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +21,7 @@ class App extends Component {
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={register}/>
                 <Route path="/GroupChat" component={GroupChat}/>
-
+                <Route path="/mainPage" component={mainPage}/>
             </React.Fragment>
 
         );
