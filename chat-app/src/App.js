@@ -16,12 +16,14 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
+
                 <Route path="/" component={home}/>
                 <NavigationBar/>
+                <Route path="/mainPage" component={mainPage}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={register}/>
                 <Route path="/GroupChat" component={GroupChat}/>
-                <Route path="/mainPage" component={mainPage}/>
+
             </React.Fragment>
 
         );

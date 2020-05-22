@@ -27,10 +27,6 @@ class mainPage extends Component{
                                         alt="First slide"
                                     /></Col>
                                 </Row>
-                                {/*<Row>*/}
-                                {/*    <Col><h3 className="mt-5 mx-5 mb-5 text-center text-danger">Make Your family closer to you.</h3></Col>*/}
-                                {/*    <Col><h3 className="mt-5 mx-0 text-center text-danger">Get To Know And Try</h3></Col>*/}
-                                {/*</Row>*/}
                             </Container>
                         </div>
                     </form>
