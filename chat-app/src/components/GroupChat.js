@@ -15,6 +15,15 @@ class GroupChat extends React.Component {
 
                             <form>
                                 <div className="form-group text-left">
+                                    <input type="text" name="name" placeholder="Enter Your Friend Name" className="form-control text-center"/>
+                                </div>
+                                <br/>
+                                <input type="submit" value="Enter" className="btn btn-primary btn-block mb-3"/>
+                            </form>
+
+
+                            <form>
+                                <div className="form-group text-left">
                                     <input type="text" name="name" placeholder="Let's Start Chatting" className="form-control text-center"/>
                                 </div>
                                 <br/>
