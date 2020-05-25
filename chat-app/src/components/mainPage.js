@@ -29,6 +29,7 @@ class mainPage extends Component{
                                 </Row>
                             </Container>
                         </div>
+                        <h3 className="text-info text-center">You can make new fiends from our service</h3>
                     </form>
                 </div>
             </React.Fragment>
