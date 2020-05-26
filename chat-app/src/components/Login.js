@@ -29,8 +29,6 @@ class Login extends React.Component {
                         </CardBody>
                     </Card>
                 </div>
-
-
             </React.Fragment>
 
         );
