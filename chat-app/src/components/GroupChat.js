@@ -18,7 +18,7 @@ class GroupChat extends React.Component {
                                     <input type="text" name="name" placeholder="Enter Your Friend Name" className="form-control text-center"/>
                                 </div>
                                 <br/>
-                                <input type="submit" value="Enter" className="btn btn-primary btn-block mb-3"/>
+                                <input type="submit" value="Enter" className="btn btn-info btn-block mb-3"/>
                             </form>
                         </CardBody>
                     </Card>

@@ -15,7 +15,7 @@ class home extends Component{
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        style={{height:"40rem"}}
+                                        style={{height:"30rem"}}
                                         src={Caro1}
                                         alt="First slide"
                                     />
@@ -23,7 +23,7 @@ class home extends Component{
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        style={{height:"40rem"}}
+                                        style={{height:"30rem"}}
                                         src={Caro2}
                                         alt="second slide"
                                     />
@@ -31,7 +31,7 @@ class home extends Component{
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        style={{height:"40rem"}}
+                                        style={{height:"30rem"}}
                                         src={Caro3}
                                         alt="Third slide"
                                     />
@@ -40,7 +40,7 @@ class home extends Component{
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        style={{height:"40rem"}}
+                                        style={{height:"30rem"}}
                                         src={Caro4}
                                         alt="fourth slide"
                                     />
