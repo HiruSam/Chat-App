@@ -7,7 +7,7 @@ import NavigationBar from './components/NavigationBar';
 import home from "./components/home";
 import Login from "./components/Login";
 import register from "./components/register";
-import GroupChat from "./components/GroupChat";
+import Chat from "./components/Chat/Chat";
 class App extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +20,7 @@ class App extends Component {
                 <NavigationBar/>
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={register}/>
-                <Route path="/GroupChat" component={GroupChat}/>
+                <Route path="/Chat" component={Chat}/>
 
 
             </React.Fragment>
