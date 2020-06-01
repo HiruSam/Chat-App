@@ -13,7 +13,7 @@ class App extends Component {
         super(props);
     }
     render() {
-        return (
+        return ( 
             <React.Fragment>
 
                 <Route path="/" component={home}/>
