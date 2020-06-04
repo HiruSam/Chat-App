@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from "react";
-
-import './Chat.css';
-
 import React from "react";
+import './Chat.css';
 import {Card, CardBody, CardTitle} from "reactstrap";
 class Chat extends React.Component {
     constructor(props) {
@@ -14,7 +11,7 @@ class Chat extends React.Component {
                 <div className="my-lg-5">
                     <Card className="bg-light mb-3 text-center w-50 mx-auto">
                         <CardBody >
-                            <CardTitle> <h2><strong>  Real Time Chat</strong></h2></CardTitle>
+                            <CardTitle> <h2><strong>Real Time Chat</strong></h2></CardTitle>
                             <br/>
 
                             <form>

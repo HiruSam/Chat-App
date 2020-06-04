@@ -27,10 +27,16 @@ class NavigationBar extends React.Component{
                             Register
                         </Link>
                         </Nav.Link>
-                        <Nav.Link> <Link  className="nav-link" to="/GroupChat">
+                        <Nav.Link> <Link  className="nav-link" to="/Chat">
                             <i className="fa fa-comment"></i>
                             &nbsp;
                             Chat
+                        </Link>
+                        </Nav.Link>
+                        <Nav.Link> <Link  className="nav-link" to="/MsgContainer">
+                            <span role="img" aria-label="emoji">💬</span>
+                            &nbsp;
+                            Online
                         </Link>
                         </Nav.Link>
                     </Nav>
