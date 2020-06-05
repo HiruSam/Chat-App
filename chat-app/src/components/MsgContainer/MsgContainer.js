@@ -1,6 +1,6 @@
 import React from 'react';
 
-import online from '../onlineIcon.png';
+import online from '../../Images/onlineIcon.png';
 
 import './MsgContainer.css';
 
