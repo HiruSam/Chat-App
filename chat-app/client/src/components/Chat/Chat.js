@@ -2,9 +2,6 @@ import React from "react";
 import './Chat.css';
 import {Card, CardBody, CardTitle} from "reactstrap";
 class Chat extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return(
             <React.Fragment>
