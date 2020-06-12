@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import register from "./components/register";
 import Chat from "./components/Chat/Chat";
 import Online from"./components/MsgContainer/MsgContainer";
+import Join from "./components/Join/Join";
 class App extends Component {
     constructor(props) {
         super(props);
@@ -23,7 +24,7 @@ class App extends Component {
                 <Route path="/register" component={register}/>
                 <Route path="/Chat" component={Chat}/>
                 <Route path="/Online" component={Online}/>
-
+                <Route path="/Join" component={Join}/>
 
             </React.Fragment>
 

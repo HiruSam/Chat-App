@@ -1,9 +1,8 @@
-const http = require('http');
 const express = require('express');
 const socketio = require('socket.io');
-const cors = require('cors');
+const http = require('http');
 
-const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
+const PORT = process.env.PORT || 5000;
 
 const router = require('./router');
 
@@ -11,35 +10,16 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.use(cors());
 app.use(router);
 
 io.on('connect', (socket) => {
-    socket.on('join', ({ name}, callback) => {
-        const { error, user } = addUser({ id: socket.id, name});
 
-        if(error) return callback(error);
+    console.log('connect');
 
-        socket.emit('message', { user: 'admin', text: `${user.name}`});
-
-        callback();
+        socket.on('disconnect', () => {
+            console.log('disconnect');
+        })
     });
 
-    socket.on('sendMessage', (message, callback) => {
-        const user = getUser(socket.id);
 
-        io.to(user.name).emit('message', { user: user.name, text: message });
-
-        callback();
-    });
-
-    socket.on('disconnect', () => {
-        const user = removeUser(socket.id);
-
-        if(user) {
-            io.to(user.name).emit('message', { user: 'Admin', text: `${user.name} has left...` });
-        }
-    })
-});
-
-server.listen(process.env.PORT || 5000, () => console.log(`Server has started.`));
+server.listen(PORT, () => console.log('Server has started on port' ${PORT}));
