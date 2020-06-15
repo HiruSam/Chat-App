@@ -18,13 +18,13 @@ class App extends Component {
         return ( 
             <React.Fragment>
 
-                <Route path="/" component={home}/>
+                <Route exact path="/" component={home}/>
                 <NavigationBar/>
-                <Route path="/login" component={Login}/>
-                <Route path="/register" component={register}/>
-                <Route path="/Chat" component={Chat}/>
-                <Route path="/Online" component={Online}/>
-                <Route path="/Join" component={Join}/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/register" component={register}/>
+                <Route exact path="/Chat" component={Chat}/>
+                <Route exact path="/Online" component={Online}/>
+                <Route exact path="/Join" component={Join}/>
 
             </React.Fragment>
 
