@@ -7,7 +7,7 @@ import './MsgContainer.css';
 const MsgContainer = ({ users }) => (
     <div className="MsgContainer">
         <div>
-            <h1>Chat App<span role="img" aria-label="emoji">💬</span></h1>
+            <h1>Chat App<span role="img" aria-label="emoji">💬 </span></h1>
             <h2><span role="img" aria-label="emoji">❤️</span></h2>
             <h2>Try it out right now!<span role="img" aria-label="emoji">⬅️</span></h2>
         </div>
@@ -15,7 +15,7 @@ const MsgContainer = ({ users }) => (
             users
                 ? (
                     <div>
-                        <h1>Currently chatting:</h1>
+                        <h1>People who Currently chatting:</h1>
                         <div className="activeContainer">
                             <h2>
                                 {users.map(({name}) => (
