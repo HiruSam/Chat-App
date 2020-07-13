@@ -10,7 +10,7 @@ class Login extends React.Component {
                     <Card className="bg-light mb-3 text-center w-50 mx-auto">
                         <CardBody >
                             <CardTitle> <h2><strong>Login</strong></h2></CardTitle>
-                            <CardSubtitle className="text-muted">Don't have an account?
+                            <CardSubtitle className="text-muted">Don't have an account..?
                                 <Link to="./register"> Register.</Link></CardSubtitle>
                             <br/>
 
