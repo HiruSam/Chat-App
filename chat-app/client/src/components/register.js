@@ -36,7 +36,7 @@ class register extends React.Component {
 
                             <div className="form-group text-left">
                                 <label>Password: </label>
-                                <input type="password" name="password" className="form-control"/>
+                                <input type="password" name="password"placeholder='Password' className="form-control"/>
 
                             </div>
 
