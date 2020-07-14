@@ -18,24 +18,24 @@ class register extends React.Component {
                             </h2>
                         </CardTitle>
                         <CardSubtitle className="text-muted">
-                            Already have an account?
+                            Already have an account....?
                             <Link to="/login"> Log In. </Link>
                         </CardSubtitle>
                         <br />
                         <form >
                             <div className="form-group text-left">
-                                <label>Username:</label>
+                                <label>Username: </label>
                                 <input type="text" name="username" className="form-control"/>
                             </div>
 
                             <div className="form-group text-left">
-                                <label>Email:</label>
+                                <label>Email: </label>
                                 <input type="email" name="email" className="form-control"/>
 
                             </div>
 
                             <div className="form-group text-left">
-                                <label>Password:</label>
+                                <label>Password: </label>
                                 <input type="password" name="password" className="form-control"/>
 
                             </div>
