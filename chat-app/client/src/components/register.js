@@ -25,17 +25,15 @@ class register extends React.Component {
                         <form >
                             <div className="form-group text-left">
                                 <label>Username: </label>
-                                <input type="text" name="username" className="form-control"/>
+                                <input type="text" name="username" placeholder='Username' className="form-control"/>
                             </div>
 
                             <div className="form-group text-left">
-                                <label>Email: </label>
-                                <input type="email" name="email" className="form-control"/>
+                                <input type="email" name="email" placeholder='Email'className="form-control"/>
 
                             </div>
 
                             <div className="form-group text-left">
-                                <label>Password: </label>
                                 <input type="password" name="password"placeholder='Password' className="form-control"/>
 
                             </div>
